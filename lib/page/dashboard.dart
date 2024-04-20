@@ -13,7 +13,7 @@ class _DashboardState extends State<Dashboard> {
 
   final controller = WebViewController()
   ..setJavaScriptMode(JavaScriptMode.unrestricted)
-  ..loadRequest(Uri.parse('http://fanaleappuntamenti.kesug.com'));
+  ..loadRequest(Uri.parse('https://fanaleappuntamenti.000webhostapp.com/index.php'));
 
   @override
   Widget build(BuildContext context) {

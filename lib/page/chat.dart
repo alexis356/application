@@ -12,7 +12,7 @@ class Chat extends StatefulWidget {
 class _ChatState extends State<Chat> {
   final controller = WebViewController()
     ..setJavaScriptMode(JavaScriptMode.unrestricted)
-    ..loadRequest(Uri.parse('http://fanaleappuntamenti.kesug.com'));
+    ..loadRequest(Uri.parse('https://fanaleappuntamenti.000webhostapp.com/aggiungi.php'));
   @override
   Widget build(BuildContext context) {
     return Scaffold(

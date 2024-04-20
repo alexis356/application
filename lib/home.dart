@@ -3,6 +3,7 @@ import 'package:learning/page/chat.dart';
 import 'package:learning/page/dashboard.dart';
 import 'package:learning/page/profile.dart';
 import 'package:learning/page/settings.dart';
+import 'package:learning/page/search.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
                     minWidth: 40,
                     onPressed: () {
                       setState(() {
-                        currentScreen = Chat();
+                        currentScreen = Search();
                         currentTab = 1;
                       });
                     },
@@ -141,7 +142,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
-                          Icons.search,
+                          Icons.settings_outlined,
                           color: currentTab == 3 ? Colors.black : Colors.black,
 
                         ),
